@@ -1,8 +1,8 @@
 # Parte Teórica do trabalho do 4o bimestre de POO.
 
-**Aluno(s):** Nycolas Motta Braga Porto, Bruno Kenzo Kawano
-**Turma:** 2ano
-**Disciplina:** Programação Orientada a Objetos
+**Aluno(s):** Nycolas Motta Braga Porto e Bruno Kenzo Kawano  
+**Turma:** 2ano  
+**Disciplina:** Programação Orientada a Objetos  
 **Professor(a):** João Paulo Biazotto
 
 ## 1. SPRING FRAMEWORK
@@ -27,12 +27,12 @@ No SistemaHotel, por exemplo, GET /quartos lista os quartos, GET /quartos/1 cons
 
 ## 5. CÓDIGOS DE STATUS HTTP
 
-Os códigos de status informam o resultado de uma requisição. No SistemaHotel, os principais são:
-_200 OK:_ a operação foi realizada com sucesso, como ao listar os quartos.
-_201 Created:_ um novo quarto foi cadastrado com sucesso.
-_204 No Content:_ a operação foi concluída, mas não há conteúdo para retornar, como em uma exclusão bem-sucedida.
-_400 Bad Request:_ a requisição contém dados inválidos, como um valor de diária em formato incorreto.
-_404 Not Found:_ o quarto solicitado não foi encontrado.
+Os códigos de status informam o resultado de uma requisição. No SistemaHotel, os principais são:  
+_200 OK:_ a operação foi realizada com sucesso, como ao listar os quartos.  
+_201 Created:_ um novo quarto foi cadastrado com sucesso.  
+_204 No Content:_ a operação foi concluída, mas não há conteúdo para retornar, como em uma exclusão bem-sucedida.  
+_400 Bad Request:_ a requisição contém dados inválidos, como um valor de diária em formato incorreto.  
+_404 Not Found:_ o quarto solicitado não foi encontrado.  
 _500 Internal Server Error:_ ocorreu uma falha inesperada no servidor durante o processamento da requisição.
 
 ## 6. JSON E CONVERSÃO DE OBJETOS
@@ -41,16 +41,16 @@ JSON é um formato leve e estruturado usado para representar e transportar dados
 
 ## 7. PRINCIPAIS ANOTAÇÕES DO SPRING
 
-**@SpringBootApplication:** identifica a classe principal e reúne configurações necessárias para iniciar a aplicação Spring Boot.
-**@RestController:** indica que a classe recebe requisições HTTP e retorna dados diretamente na resposta, geralmente em JSON.
-**@RequestMapping:** define um caminho ou mapeamento geral para uma classe ou método do controller.
-**@GetMapping:** associa um método a requisições GET, usadas para consultas.
-**@PostMapping:** associa um método a requisições POST, usadas para criar recursos.
-**@PutMapping:** associa um método a requisições PUT, usadas para atualizar recursos.
-**@DeleteMapping:** associa um método a requisições DELETE, usadas para remover recursos.
-**@PathVariable:** captura um valor que faz parte do caminho da URL, como o identificador em /quartos/1.
-**@RequestParam:** recebe parâmetros informados na URL após o sinal de interrogação, como tipo=DUPLO.
-**@RequestBody:** recebe os dados enviados no corpo da requisição, normalmente em JSON, e os converte para um objeto Java.
+**@SpringBootApplication:** identifica a classe principal e reúne configurações necessárias para iniciar a aplicação Spring Boot.  
+**@RestController:** indica que a classe recebe requisições HTTP e retorna dados diretamente na resposta, geralmente em JSON.  
+**@RequestMapping:** define um caminho ou mapeamento geral para uma classe ou método do controller.  
+**@GetMapping:** associa um método a requisições GET, usadas para consultas.  
+**@PostMapping:** associa um método a requisições POST, usadas para criar recursos.  
+**@PutMapping:** associa um método a requisições PUT, usadas para atualizar recursos.  
+**@DeleteMapping:** associa um método a requisições DELETE, usadas para remover recursos.  
+**@PathVariable:** captura um valor que faz parte do caminho da URL, como o identificador em /quartos/1.  
+**@RequestParam:** recebe parâmetros informados na URL após o sinal de interrogação, como tipo=DUPLO.  
+**@RequestBody:** recebe os dados enviados no corpo da requisição, normalmente em JSON, e os converte para um objeto Java.  
 **@Service:** identifica uma classe que contém regras e operações da aplicação, permitindo que o Spring a gerencie como um Bean.
 
 ## 8. CONTROLLER, SERVICE E REPOSITORY
